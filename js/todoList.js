@@ -98,15 +98,15 @@ var todoList = angular.module('todoList', []); //no dependencies
 		/**
 		 *	Move down item
 		 */
-		 // $scope.moveDown = function(todo){
-		 // 	var indexCurrent = todos.indexOf(todo);
-		 // 	var indexDown = todos.indexOf(todo)+1;
-		 // 	if ( indexCurrent==0 ) {
-		 // 		alert("This Todo is already the first in the Todo-List !");
-		 // 	} 
-		 // 	console.log("indexCurrentTodo: "+indexCurrentTodo);
-		 // 	console.log("indexUpTodo: "+indexUpTodo);
-		 // };	
+		 $scope.moveDown = function(todo){
+		 	var indexCurrent = todos.indexOf(todo);
+		 	var indexDown = todos.indexOf(todo)+1;
+		 	if ( indexCurrent==0 ) {
+		 		alert("This Todo is already the first in the Todo-List !");
+		 	} 
+		 	console.log("indexCurrentTodo: "+indexCurrentTodo);
+		 	console.log("indexUpTodo: "+indexUpTodo);
+		 };	
  	}
 
 ]);
