@@ -2,8 +2,12 @@
 
 Functionalities : 
 
-[FIXED] Todo list -> fix all deletions when button "ALL" is checked
+[FIXED] 
+Todo list -> fix all deletions when button "ALL" is checked
 
+[IN PROCESS] 
+Up-Down todos
 
-Chat -> development
-
+[IN PROCESS] 
+Tab for [ALL] - [COMPLETED] - [REMOVED] todos
+Count todos for each tab
