@@ -1,9 +1,11 @@
-# angular-testapp
+Functionalities :
 
-Functionalities : 
+[FIXED]
+- Todo list -> deletions when button "ALL" is checked
 
-[FIXED] Todo list -> fix all deletions when button "ALL" is checked
+[IN PROCESS]
+- Up-Down todos
 
-
-Chat -> development
-
+[BACKLOG]
+- Tab for [ALL] - [COMPLETED] - [REMOVED] todos
+- Count todos for each tab
