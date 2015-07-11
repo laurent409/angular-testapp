@@ -6,7 +6,7 @@
  * 	Application declaration : demoApp
  */
 var demoApp = angular.module('demoApp', [
-		
+
 	//modules list dependencies(declaration)
 	'todoList'
 ]);
@@ -37,17 +37,18 @@ var todoList = angular.module('todoList', []); //no dependencies
 			// Getting new todo
 			// trim() is for delete unwanted spaces before and after word
 			var newTodo = $scope.newTodo.trim();
+
 			// console.log(newTodo);
 			// Checking if the new todo is empty
 			if (!newTodo.length)
 				return;
-			
+
 			// Pushing the new todo into todos var (for more information, look the controller declaration part)
 			todos.push({
-				title: newTodo, //the name of the todo
+				title: newTodo, //the todo
 				completed: false //the new todo isn't checked
 			});
-			
+
 			// Putting the $scope.newTodo to empty for adding a new todo soon
 			$scope.newTodo = '';
 		};
@@ -77,38 +78,31 @@ var todoList = angular.module('todoList', []); //no dependencies
 		 	// 	return !todos.completed;
 		 	// });
 	 		$scope.todos = [];
-
-		 }; 
+		 };
 
 		/**
-		 *	Move up item 
+		 *	Move up item
 		 */
  		 $scope.moveUp = function(todo){
 		 	var indexCurrent = todos.indexOf(todo);
 		 	var indexUp = todos.indexOf(todo)-1;
-		 	if ( indexCurrent==0 ) {
-		 		alert("This Todo is already the first in the Todo-List !");
-		 	} 
+			var nameCurrent = todo.title;
+			if ( indexCurrent==0 ) { alert("This Todo is already the first in the Todo-List !"); }
 		 	console.log("indexCurrent: "+indexCurrent);
-		 	console.log("nameCurrent: "+todos.indexOf(todo).title);
-
+		 	console.log("nameCurrent: "+todo.title);
 		 	console.log("indexUpTodo: "+indexUp);
-		 };	
-		
+		 };
+
 		/**
 		 *	Move down item
 		 */
 		 $scope.moveDown = function(todo){
 		 	var indexCurrent = todos.indexOf(todo);
 		 	var indexDown = todos.indexOf(todo)+1;
-		 	if ( indexCurrent==0 ) {
-		 		alert("This Todo is already the first in the Todo-List !");
-		 	} 
-		 	console.log("indexCurrentTodo: "+indexCurrentTodo);
+		 	if ( indexCurrent==0 ) { alert("This Todo is already the first in the Todo-List !"); }
+		 	console.log("indexCurrent: "+indexCurrent);
 		 	console.log("indexUpTodo: "+indexUpTodo);
-		 };	
+		 };
  	}
 
 ]);
-
-
