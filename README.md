@@ -1,4 +1,6 @@
-Functionalities :
+# angular-testapp
+
+Functionalities : 
 
 [FIXED]
 - Todo list -> deletions when button "ALL" is checked
