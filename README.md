@@ -3,11 +3,11 @@
 Functionalities : 
 
 [FIXED] 
-Todo list -> fix all deletions when button "ALL" is checked
+- Todo list -> fix all deletions when button "ALL" is checked
 
 [IN PROCESS] 
-Up-Down todos
+- Up-Down todos
 
 [IN PROCESS] 
-Tab for [ALL] - [COMPLETED] - [REMOVED] todos
-Count todos for each tab
+- Tab for [ALL] - [COMPLETED] - [REMOVED] todos
+- Count todos for each tab
